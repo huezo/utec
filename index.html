@@ -1,55 +1,321 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Utec by huezo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Utec</h1>
-      <h2 class="project-tagline">notas utec</h2>
-      <a href="https://github.com/huezo/utec" class="btn">View on GitHub</a>
-      <a href="https://github.com/huezo/utec/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/huezo/utec/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+<HTML>
+ <HEAD>
+<style type="text/css">
+/* 
+*	
+*	CSSG Collections: Forms
+*	designed and coded by Alen Grakalic (http://cssglobe.com)
+*	brought to you by Templatica (http://templatica.com)
+*
+*/
 
-    <section class="main-content">
-      <p>`<code>### Welcome to GitHub Pages.
-This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here [using GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/), select a template crafted by a designer, and publish. After your page is generated, you can check out the new</code>gh-pages` branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
+body{
+/*	background:#f8f8f8;*/
+	font:13px Trebuchet MS, Arial, Helvetica, Sans-Serif;
+	color:#333;
+	line-height:100%;
+	margin:0;
+	padding:0;
+	text-align:center;
+	}
 
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+h1{
+	font-size:200%;
+	font-weight:normal;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	}		
+h2, h3, h4, h5, h6{
+	font-weight:normal;
+	margin:1em 0;
+	}	
+h2{            
+	font-size:160%;
+	}	
+h3{          
+	font-size:140%;
+	}
+h4{          
+	font-size:120%;
+	}				
 
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
+a{
+	text-decoration:none;
+	color:#05326D;
+	}
+a:hover{
+	color:#999;
+	}			
+table, input, textarea, select, li{
+	font:100% Trebuchet MS, Arial, Helvetica, Sans-Serif;
+	line-height:160%;
+	color:#333;
+	}				
+p, blockquote, ul, ol, form{
+	margin:1em 0;
+	}
+blockquote{
+	}
+img{
+	border:none;
+	}			
+hr{
+	display:none;
+	}	
+table{
+	margin:1em 0;
+	width:100%;
+	border-collapse:collapse;
+	}
+th, td{	
+	padding:2px 5px;
+	}	
+th{	
+	text-align:left;
+	}
+li{
+	display:list-item;
+	}	
+	
+#container{
+	margin:0 auto;
+	background:#fff;
+	width:600px;
+	padding:10px 40px;
+	text-align:left;
+	}		
+.estado{
+	margin:
+	color: #1780C1;
+	color: #1780C1;
+}
+.anuncioSms{
+	height:250px; width:300px;
+	float:right;
+	margin:20px 20px 0 0;
+	padding:0;
+}
+/* form 1 */
 
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span class="octicon octicon-link"></span></a>Creating pages manually</h3>
+	#form1{
+		margin:1em 0;
+		padding-top:10px;
+		background:url(sms_top.gif) no-repeat 0 0;
+		}
+	#form1 fieldset{
+		width:260px;
+		margin:20px 0 0 20px;
+		padding:0;
+		border:none;	
+		float:left;
+		display:inline;
+		}		
+		
+	#form1 legend{display:none;}	
+	#form1 p{margin:.5em 0;}	
+	#form1 label{display:block;}	
+	#form1 input, #form1 textarea{
+	width:200px;
+	border:1px solid #ddd;
+	background:#fff url(sms_input.gif) repeat-x;
+	/*		padding:3px;*/
+				padding:3px 5px 3px 25px;
+		}		
+	#form1 textarea{
+	overflow:auto;
+		}					
+	#form1 p.submit{
+	clear:both;
+	background:url(sms_bottom.gif) no-repeat 0 100%;
+	padding:0 25px 20px 25px;
+	margin: 0;
+		}	
+	#form1 button{
+	width:150px;
+	height:37px;
+	left:25px;
+	line-height:37px;
+	border:none;
+	background-image:url(sms_button.gif);
+	background-repeat:no-repeat;
+	background-color:#1780C1;
+	color:#fff;
+	cursor:pointer;
+	text-align:center;
+		}				
+	#form1 input#name{background:#fff url(sms_name.gif) no-repeat 5px 50%;}
+	#form1 input#email{background:#fff url(sms_email.gif) no-repeat 5px 50%;}
+	#form1 input#web{background:#fff url(form_url.gif) no-repeat 5px 50%;}
+	#form1 textarea#message{background:#fff url(sms_note.gif) no-repeat 5px 6px;}
+	#form1 input#phone{background:#fff url(sms_phone.png) no-repeat 5px 6px;}
+.small/* // form 5 */
+ {
+	font-size: 10px;
+	line-height: 120%;
+}
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
 
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
-
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/huezo/utec">Utec</a> is maintained by <a href="https://github.com/huezo">huezo</a>.</span>
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
-
-    </section>
-
+@charset "utf-8";
+.style1 {
+	color: #003366
+}
+.style2 {
+	color: #FF0000;
+	font-weight: bold;
+}
+.style3 {
+	color: #FE0000;
+	font-weight: bold;
+}
+</style>
+  <meta name="viewport" content="width=device-width, user-scalable=no">
   
-  </body>
-</html>
+  
+ </HEAD>
+
+ <BODY>
+ <body bgcolor="#330000" text="#FFFF00"
+link="#FFFF00" vlink="#33FF33" alink="#FFFF00">
+<BR><BR>
+<CENTER><H1><FONT SIZE="5" COLOR="#FFFF00">Promedio De Notas para estudiantes de la UTEC
+<FONT SIZE="4" COLOR="#00FF33">
+  <br>
+  LLena Todos Los Campos sino tienes la nota <br>
+<br><br>
+ LLenalos con Cero !
+  </FONT></H1>
+
+
+  <FORM METHOD=POST ACTION="">
+<BR><BR>
+<label for="idnombre"><B><FONT SIZE="" COLOR="#33FF00">Nota 1 :</FONT></B> </label>
+    <INPUT TYPE="text" ID="nota1"><BR>
+<BR>
+<label for="idnombre1"><B><FONT SIZE="" COLOR="#33FF00">Nota 2 : </FONT></B></label>
+    <INPUT TYPE="text" ID="nota2"><BR>
+<BR>
+    <label for="idnombre2"><B><FONT SIZE="" COLOR="#33FF00">Nota 3 : </FONT></B></label>
+    <INPUT TYPE="text" ID="nota3"><BR>
+<BR>
+    <label for="idnombre2"><B><FONT SIZE="" COLOR="#33FF00">Nota 4 : </FONT></B></label>
+    <INPUT TYPE="text" ID="nota4"><BR>
+<BR>
+    <label for="idnombre3"><B><FONT SIZE="" COLOR="#33FF00">Nota 5 : </FONT></B></label>
+    <INPUT TYPE="text" ID="nota5"><BR>
+<BR><BR>
+<INPUT TYPE="button" VALUE="NOTA FINAL" ONCLICK="n()">
+
+<INPUT TYPE="button" VALUE="Creador" ONCLICK="huezo()">
+
+<INPUT TYPE="reset" value="Borrar">
+</CENTER>
+<SCRIPT LANGUAGE="JavaScript">
+
+function n()
+{
+ n1= document.getElementById('nota1').value;
+n2=  document.getElementById('nota2').value;
+ n3= document.getElementById('nota3').value;
+ n4= document.getElementById('nota4').value;
+ n5=  document.getElementById('nota5').value;
+
+n1=parseFloat(n1);
+n2=parseFloat(n2);
+n3=parseFloat(n3);
+n4=parseFloat(n4);
+n5=parseFloat(n5);
+
+notafinal1=(n1+n2+n3+n4+n5)/5;
+notafinal=notafinal1.toFixed(1)
+alert('La Nota Final Es: '+notafinal);
+if (notafinal<6.0)
+{
+alert('Reprobastes la Materia ');
+}
+if (notafinal>=6.0)
+{
+alert('Aprobastes la Materia ');
+}
+
+
+document.getElementById('nota5').value==notafinal;
+
+
+//document.write('La Nota Final Es: '+notafinal);
+
+}
+
+</SCRIPT>
+
+    <!-- Creador: Victor Manuel Huezo Lopez.  -->
+
+    
+ <SCRIPT LANGUAGE="JavaScript">
+ <!--
+    function huezo()
+    {
+    
+    alert('CREADOR: VICTOR MANUEL HUEZO LOPEZ.......');
+    }
+ //-->
+ </SCRIPT>
+
+<!-- huezo -->
+
+    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<TEXTAREA NAME="" ROWS="10" COLS="20" id="y">Digita aqui tu nombre
+y se mostrara tu nombre mas tu nota </TEXTAREA>
+
+<BR><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<INPUT TYPE="button" VALUE="Nombre y Nota Final" ONCLICK="ht()">
+<SCRIPT LANGUAGE="JavaScript">
+
+        function ht()
+    {
+     n1= document.getElementById('nota1').value;
+n2=  document.getElementById('nota2').value;
+ n3= document.getElementById('nota3').value;
+ n4= document.getElementById('nota4').value;
+ n5=  document.getElementById('nota5').value;
+
+n1=parseFloat(n1);
+n2=parseFloat(n2);
+n3=parseFloat(n3);
+n4=parseFloat(n4);
+n5=parseFloat(n5);
+
+notafinal1=(n1+n2+n3+n4+n5)/5;
+notafinal=notafinal1.toFixed(1)
+
+
+alert(document.getElementById('y').value+' Tu Nota Final Es: '+notafinal);
+if (notafinal<6.0)
+{
+alert('Reprobastes la Materia '+document.getElementById('y').value);
+}
+if (notafinal>=6.0)
+{
+alert('Aprobastes la Materia '+document.getElementById('y').value);
+
+}
+    
+    }
+
+</SCRIPT>
+
+
+ </BODY>
+</HTML>
