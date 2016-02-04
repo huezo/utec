@@ -46,7 +46,7 @@ function msg_valid(msg)
   -- Don't process outgoing messages
   if msg.out then
     print('\27[36mNot valid: msg from us\27[39m')
-    return false
+    return true
   end
 
   -- Before bot was started
@@ -62,12 +62,12 @@ function msg_valid(msg)
 
   if not msg.to.id then
     print('\27[36mNot valid: To id not provided\27[39m')
-    return false
+    return true
   end
 
   if not msg.from.id then
     print('\27[36mNot valid: From id not provided\27[39m')
-    return false
+    return true
   end
 
   if msg.from.id == our_id then
