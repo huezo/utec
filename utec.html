@@ -1,0 +1,261 @@
+<HTML>
+ <HEAD>
+
+<LINK REL="stylesheet" TYPE="text/css" HREF="huezo.css">
+
+
+
+
+
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  
+  
+ </HEAD>
+<TITLE>UTEC NOTAS SV</TITLE>
+ <BODY>
+ 	
+ 	
+<body bgcolor="#330000" text=" #1ac6ff"
+link="#66FFFF" vlink="#FF9933" alink="#00FF66">
+<BR><BR>
+
+
+<!-- FORM HUEZO -->
+<CENTER>
+<FONT SIZE="5%">
+
+  <FORM METHOD=POST ACTION=""  class="huezo"  width="100%"  >
+<BR><BR>
+
+<!-- NOTA 1 -->
+
+
+<label for="idnombre"><B><FONT SIZE="" COLOR="#33FF00"  >Nota 1 :</FONT></B> </label>
+
+    <INPUT TYPE="text" ID="nota1"   ><BR>
+
+<!--  size="50%" maxlength="50%" -->
+
+<!-- NOTA 2 -->
+
+
+<BR>
+<label for="idnombre1"><B><FONT SIZE="" COLOR="#33FF00">Nota 2 : </FONT></B></label>
+
+    <INPUT TYPE="text" ID="nota2"  ><BR>
+<BR>
+<!-- NOTA 3 -->
+
+
+    <label for="idnombre2"><B><FONT SIZE="" COLOR="#33FF00">Nota 3 : </FONT></B></label>
+    <INPUT TYPE="text" ID="nota3"  ><BR>
+
+<!-- NOTA 4 -->
+
+<BR>
+    <label for="idnombre2"><B><FONT SIZE="" COLOR="#33FF00">Nota 4 : </FONT></B></label>
+    <INPUT TYPE="text" ID="nota4"  ><BR>
+<BR>
+
+<!-- NOTA 5 -->
+
+
+    <label for="idnombre3"><B><FONT SIZE="" COLOR="#33FF00">Nota 5 : </FONT></B></label>
+    <INPUT TYPE="text" ID="nota5"  ><BR>
+<BR><BR>
+
+<!-- BOTONES  -->
+
+</FONT>
+
+<BR><BR>
+<INPUT TYPE="button" class="myButton" VALUE="NOTA FINAL" ONCLICK="n()">
+
+<BR><BR>
+
+<INPUT TYPE="button" class="myButton" VALUE="Creador" ONCLICK="huezo()">
+
+<BR><BR>
+
+<INPUT TYPE="reset" class="myButton" value="Borrar">
+
+<BR><BR>
+
+</CENTER>
+
+<BR>
+
+<!-- Funcion -->
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+  		                   
+
+function n()
+{
+ n1= document.getElementById('nota1').value;
+n2=  document.getElementById('nota2').value;
+ n3= document.getElementById('nota3').value;
+ n4= document.getElementById('nota4').value;
+ n5=  document.getElementById('nota5').value;
+
+n1=parseFloat(n1);
+n2=parseFloat(n2);
+n3=parseFloat(n3);
+n4=parseFloat(n4);
+n5=parseFloat(n5);
+
+notafinal1=(n1+n2+n3+n4+n5)/5;
+notafinal=notafinal1.toFixed(1)
+alert('La Nota Final Es: '+notafinal);
+if (notafinal<6.0)
+{
+alert('Reprobastes la Materia ');
+}
+if (notafinal>=6.0)
+{
+alert('Aprobastes la Materia ');
+}
+
+
+document.getElementById('nota5').value==notafinal;
+
+
+//document.write('La Nota Final Es: '+notafinal);
+
+}
+
+</SCRIPT>
+
+<!-- fin de la funcion  -->
+
+
+
+    <!-- Creador: Victor Manuel Huezo Lopez.  -->
+
+    
+ <SCRIPT LANGUAGE="JavaScript">
+ <!--
+    function huezo()
+    {
+    
+    alert('CREADOR: VICTOR MANUEL HUEZO LOPEZ.......');
+    }
+ //-->
+ </SCRIPT>
+
+<!-- huezo -->
+
+    
+<br> 
+
+<!-- Comentario -->
+
+<BR><BR>
+<BR><BR>
+
+
+<TEXTAREA NAME="" ROWS="10%" COLS="20%" id="y" class="huezo" >Digita aqui tu nombre
+y se mostrara tu nombre mas tu nota </TEXTAREA>
+
+<BR><BR>
+
+<!--  
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+-->
+<!-- Comentario -->
+
+<br>
+
+
+
+<INPUT TYPE="button" VALUE="Nombre + NotaFinal" class="myButton" ONCLICK="ht()">
+
+
+
+<!-- funcion 2 -->
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+        function ht()
+    {
+     n1= document.getElementById('nota1').value;
+n2=  document.getElementById('nota2').value;
+ n3= document.getElementById('nota3').value;
+ n4= document.getElementById('nota4').value;
+ n5=  document.getElementById('nota5').value;
+
+n1=parseFloat(n1);
+n2=parseFloat(n2);
+n3=parseFloat(n3);
+n4=parseFloat(n4);
+n5=parseFloat(n5);
+
+notafinal1=(n1+n2+n3+n4+n5)/5;
+notafinal=notafinal1.toFixed(1)
+
+
+alert(document.getElementById('y').value+' Tu Nota Final Es: '+notafinal);
+if (notafinal<6.0)
+{
+alert('Reprobastes la Materia '+document.getElementById('y').value);
+}
+if (notafinal>=6.0)
+{
+alert('Aprobastes la Materia '+document.getElementById('y').value);
+
+}
+    
+    }
+
+</SCRIPT>
+
+<!-- fin de la funcion  -->
+
+
+<!-- TEXTO  -->
+
+<br><br><br>
+
+<CENTER>
+<a href="https://huezohuezo1990.wordpress.com/" target="_blank" >VICTOR MANUEL HUEZO LOPEZ</a>
+
+<br><br>
+   
+Promedio De Notas para estudiantes de la UTEC
+<br>
+LLena Todos Los Campos sino tienes la nota 
+<br>
+LLenalos con Cero !
+<br><br>
+
+    <a href="https://huezohuezo1990.wordpress.com/" target="_blank" >VICTOR MANUEL HUEZO LOPEZ</a>
+ </CENTER>
+  
+<br>
+
+
+<!-- fin TEXTO  -->
+
+
+
+<CENTER>
+
+ </BODY>
+
+<!-- NOTAS UTEC -->
+
+</HTML>
+
+<!-- NOTAS UTEC -->
+
+
