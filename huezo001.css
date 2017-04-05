@@ -1,0 +1,104 @@
+/************************************************************************************
+smaller than 960
+*************************************************************************************/
+@media screen and (max-width: 960px) {
+
+	/* pagewrap */
+	#page_wrap {
+		width: 95%;
+	}
+
+	/* content */
+	#content_holder #main_content_right_side, /* igonre this id is just for testing */
+	#content_holder #main_content_left_side /* igonre this id is just for testing */ {
+		width: 68%;
+		padding: 3% 4%;
+		margin:0;
+		
+	}
+	#main_content {
+		width: 40%;
+		padding: 3% 4%;
+	}
+
+	/* sidebar */
+	#right_sidebar,
+	#left_sidebar {
+		width: 20%;
+		padding:1% 2%;
+	}
+
+	/* embedded videos */
+	.video embed,
+	.video object,
+	.video iframe {
+		width: 100%;
+		height: auto;
+		/*min-height: 300px;*/
+	}
+
+}
+
+/************************************************************************************
+smaller than 650
+*************************************************************************************/
+@media screen and (max-width: 650px) {
+
+	/* header */
+	#header {
+		height: auto;
+	}
+
+	/* main nav */
+	#main-nav {
+		position: static;
+	}
+
+	/* content */
+	#main_content_right_side, /* igonre this id is just for testing */
+	#main_content_left_side, /* igonre this id is just for testing */
+	#main_content {
+		width: auto;
+		float: none;
+		margin: 20px 0;
+		border:0;
+	}
+
+	/* sidebar */
+	#right_sidebar,
+	#left_sidebar {
+		width: 100%;
+		margin: 0;
+		float: none;
+	}
+
+	/* embedded videos */
+	.video embed,
+	.video object,
+	.video iframe {
+		min-height: 250px;
+	}
+
+}
+
+/************************************************************************************
+smaller than 560
+*************************************************************************************/
+@media screen and (max-width: 480px) {
+
+	/* disable webkit text size adjust (for iPhone) */
+	html {
+		-webkit-text-size-adjust: none;
+	}
+
+	/* main nav */
+	#main-nav  {
+		
+	}
+	#main-nav a {
+		font-size: 90%;
+		padding: 10px 8px;
+	}
+
+}
+
