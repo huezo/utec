@@ -31,7 +31,8 @@ input[type='text'] { font-size: 100%; }
 
  </HEAD>
 <TITLE>UTEC NOTAS SV</TITLE>
- <BODY>
+
+ < BODY >
  	
  <br><br>
   <div class="link123" > 
@@ -57,9 +58,12 @@ link="#66FFFF" vlink="#FF9933" alink="#00FF66">
 
 <!-- FORM HUEZO -->
 <CENTER>
+
+
+<!-- INICIO FONT SIZE  -->
 <FONT SIZE="5%">
 
-  <FORM METHOD=POST ACTION=""  class="huezo"  width="100%"  >
+  <FORM   METHOD=POST ACTION="#"  class="huezo"  width="100%"  >
 <BR><BR>
 
 <!-- NOTA 1 -->
@@ -103,10 +107,15 @@ link="#66FFFF" vlink="#FF9933" alink="#00FF66">
 
 </FONT>
 
+<!-- FIN FONT SIZE  -->
+
+
+
+
 <BR><BR>
 <INPUT TYPE="button" class="myButton" VALUE="NOTA FINAL" ONCLICK="n()">
 
-<BR><BR>
+<BR><BR><BR>
 
 <INPUT TYPE="button" class="myButton" VALUE="Creador" ONCLICK="huezo()">
 
@@ -116,9 +125,27 @@ link="#66FFFF" vlink="#FF9933" alink="#00FF66">
 
 <BR><BR>
 
+<!-- INICIO FONT SIZE 2 -->
+<FONT SIZE="5%">
+
+<label ><B><FONT SIZE="" COLOR="#33FF00">Nota Final : </FONT></B></label>
+    <INPUT TYPE="text"  id="NF" class="huezo" ><BR>
+<BR><BR>
+
+<label ><B><FONT SIZE="" COLOR="#33FF00">Resultado : </FONT></B></label>
+    <INPUT TYPE="text"  id="R" class="huezo"  ><BR>
+<BR><BR>
+
+<!-- FIN FONT SIZE 2  -->
+
+
 </CENTER>
 
 <BR>
+
+
+<!-- FORM -->
+
 
 <!-- Funcion -->
 
@@ -130,10 +157,15 @@ link="#66FFFF" vlink="#FF9933" alink="#00FF66">
 function n()
 {
  n1= document.getElementById('nota1').value;
-n2=  document.getElementById('nota2').value;
+ n2=  document.getElementById('nota2').value;
  n3= document.getElementById('nota3').value;
  n4= document.getElementById('nota4').value;
  n5=  document.getElementById('nota5').value;
+
+
+
+
+
 
 n1=parseFloat(n1);
 n2=parseFloat(n2);
@@ -143,18 +175,36 @@ n5=parseFloat(n5);
 
 notafinal1=(n1+n2+n3+n4+n5)/5;
 notafinal=notafinal1.toFixed(1)
+
+// 
+
+document.getElementById('NF').value = notafinal;
+
+//
+
 alert('La Nota Final Es: '+notafinal);
 if (notafinal<6.0)
 {
 alert('Reprobastes la Materia ');
+
+//
+
+document.getElementById('R').value = "Reprobastes la Materia" ;
+
+//
+
 }
 if (notafinal>=6.0)
 {
 alert('Aprobastes la Materia ');
+
+//
+
+document.getElementById('R').value = "Aprobastes la Materia" ;
+
+//
 }
 
-
-document.getElementById('nota5').value==notafinal;
 
 
 //document.write('La Nota Final Es: '+notafinal);
@@ -223,8 +273,9 @@ y se mostrara tu nombre mas tu nota </TEXTAREA>
 
         function ht()
     {
-     n1= document.getElementById('nota1').value;
-n2=  document.getElementById('nota2').value;
+
+ n1= document.getElementById('nota1').value;
+ n2=  document.getElementById('nota2').value;
  n3= document.getElementById('nota3').value;
  n4= document.getElementById('nota4').value;
  n5=  document.getElementById('nota5').value;
@@ -239,14 +290,33 @@ notafinal1=(n1+n2+n3+n4+n5)/5;
 notafinal=notafinal1.toFixed(1)
 
 
+// 
+
+document.getElementById('NF').value = notafinal;
+
+//
+
 alert(document.getElementById('y').value+' Tu Nota Final Es: '+notafinal);
 if (notafinal<6.0)
 {
 alert('Reprobastes la Materia '+document.getElementById('y').value);
+
+//
+
+document.getElementById('R').value = "Reprobastes la Materia" ;
+
+//
+
 }
 if (notafinal>=6.0)
 {
 alert('Aprobastes la Materia '+document.getElementById('y').value);
+
+//
+
+document.getElementById('R').value = "Aprobastes la Materia" ;
+
+//
 
 }
     
