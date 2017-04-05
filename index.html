@@ -1,9 +1,23 @@
-<HTML>
- <HEAD>
+	
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8"/>
+        <meta name="description" content="UTEC NOTAS SV" />
 
-<LINK REL="stylesheet" TYPE="text/css" HREF="huezo.css">
+ <TITLE>UTEC NOTAS SV</TITLE>       
 
-<link href="huezo123.css" rel="stylesheet" type="text/css" />
+
+
+<link href="huezo.css" rel="stylesheet" type="text/css">
+
+
+<link href="huezo123.css" rel="stylesheet" type="text/css">
+
+
+
+
+<link href="huezo001.css" rel="stylesheet" type="text/css">
 
 
 <!--
@@ -30,7 +44,7 @@ input[type='text'] { font-size: 100%; }
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
  </HEAD>
-<TITLE>UTEC NOTAS SV</TITLE>
+
 
  <BODY>
  	
@@ -57,6 +71,7 @@ link="#66FFFF" vlink="#FF9933" alink="#00FF66">
 
 
 <!-- FORM HUEZO -->
+
 <CENTER>
 
 
@@ -71,7 +86,7 @@ link="#66FFFF" vlink="#FF9933" alink="#00FF66">
 
 <label for="idnombre"><B><FONT SIZE="" COLOR="#33FF00"  >Nota 1 :</FONT></B> </label>
 
-    <INPUT TYPE="text" ID="nota1"   ><BR>
+    <INPUT TYPE="text" ID="nota1"  placeholder="Nota 1" ><BR>
 
 <!--  size="50%" maxlength="50%" -->
 
@@ -81,26 +96,26 @@ link="#66FFFF" vlink="#FF9933" alink="#00FF66">
 <BR>
 <label for="idnombre1"><B><FONT SIZE="" COLOR="#33FF00">Nota 2 : </FONT></B></label>
 
-    <INPUT TYPE="text" ID="nota2"  ><BR>
+    <INPUT TYPE="text" ID="nota2" placeholder="Nota 2" ><BR>
 <BR>
 <!-- NOTA 3 -->
 
 
     <label for="idnombre2"><B><FONT SIZE="" COLOR="#33FF00">Nota 3 : </FONT></B></label>
-    <INPUT TYPE="text" ID="nota3"  ><BR>
+    <INPUT TYPE="text" ID="nota3" placeholder="Nota 3" ><BR>
 
 <!-- NOTA 4 -->
 
 <BR>
     <label for="idnombre2"><B><FONT SIZE="" COLOR="#33FF00">Nota 4 : </FONT></B></label>
-    <INPUT TYPE="text" ID="nota4"  ><BR>
+    <INPUT TYPE="text" ID="nota4" placeholder="Nota 4" ><BR>
 <BR>
 
 <!-- NOTA 5 -->
 
 
     <label for="idnombre3"><B><FONT SIZE="" COLOR="#33FF00">Nota 5 : </FONT></B></label>
-    <INPUT TYPE="text" ID="nota5"  ><BR>
+    <INPUT TYPE="text" ID="nota5" placeholder="Nota 5"  ><BR>
 <BR><BR>
 
 <!-- BOTONES  -->
@@ -110,12 +125,26 @@ link="#66FFFF" vlink="#FF9933" alink="#00FF66">
 <!-- FIN FONT SIZE  -->
 
 
+<INPUT TYPE="button" class="myButton" VALUE="NOTA FINAL" ONCLICK="n()">
+
+
+<BR><BR><BR>
+
+<!-- INICIO FONT SIZE 2 -->
+<FONT SIZE="5%">
+
+<label ><B><FONT SIZE="" COLOR="#33FF00">Nota Final : </FONT></B></label>
+    <INPUT TYPE="text"  id="NF" class="huezo" readonly="readonly disabled="disabled" placeholder="Nota Final." ><BR>
+<BR><BR>
+
+<label ><B><FONT SIZE="" COLOR="#33FF00">Resultado : </FONT></B></label>
+    <INPUT TYPE="text"  id="R" class="huezo" readonly="readonly disabled="disabled" placeholder="Resultado."><BR>
+<BR><BR>
+
+<!-- FIN FONT SIZE 2  -->
 
 
 <BR><BR>
-<INPUT TYPE="button" class="myButton" VALUE="NOTA FINAL" ONCLICK="n()">
-
-<BR><BR><BR>
 
 <INPUT TYPE="button" class="myButton" VALUE="Creador" ONCLICK="huezo()">
 
@@ -124,20 +153,6 @@ link="#66FFFF" vlink="#FF9933" alink="#00FF66">
 <INPUT TYPE="reset" class="myButton" value="Borrar">
 
 <BR><BR>
-
-<!-- INICIO FONT SIZE 2 -->
-<FONT SIZE="5%">
-
-<label ><B><FONT SIZE="" COLOR="#33FF00">Nota Final : </FONT></B></label>
-    <INPUT TYPE="text"  id="NF" class="huezo" ><BR>
-<BR><BR>
-
-<label ><B><FONT SIZE="" COLOR="#33FF00">Resultado : </FONT></B></label>
-    <INPUT TYPE="text"  id="R" class="huezo"  ><BR>
-<BR><BR>
-
-<!-- FIN FONT SIZE 2  -->
-
 
 </CENTER>
 
@@ -185,7 +200,6 @@ document.getElementById('NF').value = notafinal;
 alert('La Nota Final Es: '+notafinal);
 if (notafinal<6.0)
 {
-alert('Reprobastes la Materia ');
 
 //
 
@@ -193,16 +207,23 @@ document.getElementById('R').value = "Reprobastes la Materia" ;
 
 //
 
+alert('Reprobastes la Materia ');
+
+
+
 }
 if (notafinal>=6.0)
 {
-alert('Aprobastes la Materia ');
 
 //
 
 document.getElementById('R').value = "Aprobastes la Materia" ;
 
 //
+
+alert('Aprobastes la Materia ');
+
+
 }
 
 
@@ -297,9 +318,9 @@ document.getElementById('NF').value = notafinal;
 //
 
 alert(document.getElementById('y').value+' Tu Nota Final Es: '+notafinal);
+
 if (notafinal<6.0)
 {
-alert('Reprobastes la Materia '+document.getElementById('y').value);
 
 //
 
@@ -307,16 +328,24 @@ document.getElementById('R').value = "Reprobastes la Materia" ;
 
 //
 
+alert('Reprobastes la Materia '+document.getElementById('y').value);
+
+
+
 }
 if (notafinal>=6.0)
 {
-alert('Aprobastes la Materia '+document.getElementById('y').value);
+
 
 //
 
 document.getElementById('R').value = "Aprobastes la Materia" ;
 
 //
+
+alert('Aprobastes la Materia '+document.getElementById('y').value);
+
+
 
 }
     
